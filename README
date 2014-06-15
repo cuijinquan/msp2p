@@ -1,3 +1,173 @@
 hello,this is my first git
 
+Welcome to Git (version 1.8.1.2-preview20130201)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+Cuijinquan@S /G/msp2p-git
+$ git clon https://github.com/cuijinquan/msp2p.git
+git: 'clon' is not a git command. See 'git --help'.
+
+Did you mean one of these?
+        clone
+	        column
+		Cuijinquan@S /G/msp2p-git
+		$ git clone https://github.com/cuijinquan/msp2p.git
+		Cloning into 'msp2p'...
+		remote: Counting objects: 3, done.
+		remote: Total 3 (delta 0), reused 0 (delta 0)
+		Unpacking objects: 100% (3/3), done.
+		Cuijinquan@S /G/msp2p-git
+		$ cd smp2p
+		sh: cd: smp2p: No such file or directory
+		Cuijinquan@S /G/msp2p-git
+		$ cd msp2p/
+		Cuijinquan@S /G/msp2p-git/msp2p (master)
+		$ git init
+		Reinitialized existing Git repository in g:/msp2p-git/msp2p/.git/
+		Cuijinquan@S /G/msp2p-git/msp2p (master)
+		$ touch README
+		Cuijinquan@S /G/msp2p-git/msp2p (master)
+		$ vi README
+		Cuijinquan@S /G/msp2p-git/msp2p (master)
+		$ git add README
+		Cuijinquan@S /G/msp2p-git/msp2p (master)
+		$ git commit mit -m 'first commit'
+		error: pathspec 'mit' did not match any file(s) known to git.
+		Cuijinquan@S /G/msp2p-git/msp2p (master)
+		$ git commit  -m 'first commit'
+		[master f353333] first commit
+		 1 file changed, 2 insertions(+)
+		  create mode 100644 README
+		  Cuijinquan@S /G/msp2p-git/msp2p (master)
+		  $ git remote add origin https://github.com/cuijinquan/msp2p.git
+		  fatal: remote origin already exists.
+		  Cuijinquan@S /G/msp2p-git/msp2p (master)
+		  $ git push origin master
+		  Username for 'https://github.com': cuijinquan
+		  Password for 'https://cuijinquan@github.com':
+		  Counting objects: 4, done.
+		  Delta compression using up to 4 threads.
+		  Compressing objects: 100% (2/2), done.
+		  Writing objects: 100% (3/3), 288 bytes, done.
+		  Total 3 (delta 0), reused 0 (delta 0)
+		  To https://github.com/cuijinquan/msp2p.git
+		     0908c6a..f353333  master -> master
+		     Cuijinquan@S /G/msp2p-git/msp2p (master)
+		     $ git add README
+		     Cuijinquan@S /G/msp2p-git/msp2p (master)
+		     $ git push origin master
+		     Username for 'https://github.com': cuijinquan
+		     Password for 'https://cuijinquan@github.com':
+		     Everything up-to-date
+		     Cuijinquan@S /G/msp2p-git/msp2p (master)
+		     $ git update origin master
+		     git: 'update' is not a git command. See 'git --help'.
+
+		     Did you mean this?
+		             update-ref
+			     Cuijinquan@S /G/msp2p-git/msp2p (master)
+			     $ git --help
+			     usage: git [--version] [--exec-path[=<path>]] [--html-path] [--man-path] [--info
+			     -path]
+			                [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+					           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+						              [-c name=value] [--help]
+							                 <command> [<args>]
+
+									 The most commonly used git commands are:
+									    add        Add file contents to the index
+									       bisect     Find by binary search the change that introduced a bug
+									          branch     List, create, or delete branches
+										     checkout   Checkout a branch or paths to the working tree
+										        clone      Clone a repository into a new directory
+											   commit     Record changes to the repository
+											      diff       Show changes between commits, commit and working tree, etc
+											         fetch      Download objects and refs from another repository
+												    grep       Print lines matching a pattern
+												       init       Create an empty git repository or reinitialize an existing one
+												          log        Show commit logs
+													     merge      Join two or more development histories together
+													        mv         Move or rename a file, a directory, or a symlink
+														   pull       Fetch from and merge with another repository or a local branch
+														      push       Update remote refs along with associated objects
+														         rebase     Forward-port local commits to the updated upstream head
+															    reset      Reset current HEAD to the specified state
+															       rm         Remove files from the working tree and from the index
+															          show       Show various types of objects
+																     status     Show the working tree status
+																        tag        Create, list, delete or verify a tag object signed with GPG
+
+																	See 'git help <command>' for more information on a specific command.
+																	Cuijinquan@S /G/msp2p-git/msp2p (master)
+																	$ git fetch
+																	Cuijinquan@S /G/msp2p-git/msp2p (master)
+																	$ git  merge
+																	fatal: No commit specified and merge.defaultToUpstream not set.
+																	Cuijinquan@S /G/msp2p-git/msp2p (master)
+																	$ git  merge --help
+																	Launching default browser to display HTML ...
+																	Cuijinquan@S /G/msp2p-git/msp2p (master)
+																	$ git merge local
+																	fatal: local - not something we can merge
+																	Cuijinquan@S /G/msp2p-git/msp2p (master)
+																	$ git checkout origin/master README
+																	Cuijinquan@S /G/msp2p-git/msp2p (master)
+																	$ git update origin master
+																	git: 'update' is not a git command. See 'git --help'.
+
+																	Did you mean this?
+																	        update-ref
+																		Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		$ git push origin master
+																		Username for 'https://github.com': cuijinquan
+																		Password for 'https://cuijinquan        @github.com':
+																		fatal: Authentication failed
+																		Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		$ git push origin master
+																		Username for 'https://github.com': cuijinquan
+																		Password for 'https://cuijinquan@github.com':
+																		Everything up-to-date
+																		Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		$ git stash
+																		Saved working directory and index state WIP on master: f353333 first commit
+																		HEAD is now at f353333 first commit
+																		Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		$ git pull
+																		Already up-to-date.
+																		Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		$ git stash pop
+																		# On branch master
+																		# Changes not staged for commit:
+																		#   (use "git add <file>..." to update what will be committed)
+																		#   (use "git checkout -- <file>..." to discard changes in working directory)
+																		#
+																		#       modified:   README
+																		#
+																		no changes added to commit (use "git add" and/or "git commit -a")
+																		Dropped refs/stash@{0} (e95d5f57c17ed708c2c6bed251c11f421cd48dd1)
+																		Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		$ git branch -a
+																		* master
+																		  remotes/origin/HEAD -> origin/master
+																		    remotes/origin/master
+																		    Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		    $ git commit -a
+																		    [master 0db666c] test
+																		     1 file changed, 1 insertion(+)
+																		     Cuijinquan@S /G/msp2p-git/msp2p (master)
+																		     $ git push origin master
+																		     Username for 'https://github.com': cuijinquan
+																		     Password for 'https://cuijinquan@github.com':
+																		     Counting objects: 5, done.
+																		     Delta compression using up to 4 threads.
+																		     Compressing objects: 100% (3/3), done.
+																		     Writing objects: 100% (3/3), 286 bytes, done.
+																		     Total 3 (delta 0), reused 0 (delta 0)
+																		     To https://github.com/cuijinquan/msp2p.git
+																		        f353333..0db666c  master -> master
+																			Cuijinquan@S /G/msp2p-git/msp2p (master)
+																			$
+
 00000000000000000000000000000000000000
